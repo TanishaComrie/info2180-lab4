@@ -5,15 +5,16 @@ window.onload = function (){
 
 function Search(){
     var name = document.getElementById("name").value;
-    var sent = "http://localhost/info2180-lab4/superheroes.php?query=" + String(name);
+    var results = document.getElementById("result");
+    var sent = "http://localhost/info2180-lab4/superheroes.php?query=" + encodeURIComponent(name);
     fetch(sent)
     .then(response => response.text())
     .then(data => {
-      alert(data);
+       results.innerHTML= data;
     })
     .catch(error => {
         alert("Error: " + error.message);
-    });
+    })
 }
 
 
