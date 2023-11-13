@@ -73,3 +73,17 @@ $superheroes = [
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
 </ul>
+
+<?php
+if (isset($_GET['query'])){
+    $que = $_GET['query'];
+}
+?>
+
+
+<?php foreach ($superheroes as $superhero){
+    if ($superhero['alias'] == $que){
+       echo $superhero;
+       break;
+    }
+} ?>

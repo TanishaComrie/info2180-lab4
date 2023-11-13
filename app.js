@@ -4,15 +4,20 @@ window.onload = function (){
 
 
 function Search(){
-    fetch("http://localhost/info2180-lab4/superheroes.php")
+    var name = document.getElementById("name").value;
+    var sent = "http://localhost/info2180-lab4/superheroes.php?query=" + String(name);
+    fetch(sent)
     .then(response => response.text())
     .then(data => {
       alert(data);
     })
     .catch(error => {
         alert("Error: " + error.message);
-    })
+    });
 }
+
+
+
 
 
 

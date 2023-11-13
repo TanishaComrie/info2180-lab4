@@ -1,0 +1,31 @@
+header{
+    background-color: red;
+    color: white;
+    padding:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-content: center;
+   }
+   h1{
+    font-size: 25px;
+   }
+   #Search{
+    background-color: blueviolet;
+    color: white;
+    font-size: 18px;
+    opacity: 0.6;
+    padding: 10px 25px;
+    border-radius: 5px;
+   }
+   #Search:hover{
+    opacity: 3;
+   }
+   #name{
+    padding: 10px 200px;
+   }
+   #line{}
+   #result{
+    padding:150px 150px;
+    background-color: #888888;
+    background-size: 200px;
+   }
+   main{}
